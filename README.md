@@ -2,6 +2,8 @@
 
 Migrate Plane issues to Linear through Linear's importer tool. This migrator takes in a CSV file with Plane issues and outputs a CSV file with Linear issues.
 
+Official Linear documentation [here](https://linear.app/docs/import-issues)
+
 ## Missing functionality
 
 - Projects don't seem to be created when importing. This is weird since when importing from Jira, the importer creates the projects.
