@@ -13,27 +13,27 @@ Migrate Plane issues to Linear through Linear's importer tool. This migrator tak
 
 ## How fields are mapped
 
-| Plane field        | Linear field      |
-| ------------------ | ----------------- |
-| Name               | Title             |
-| Description        | Issue description |
-| State              | Status            |
-| Start Date         | Started           |
-| Target Date        | Due Date          |
-| Priority           | Priority          |
-| Created By         | Creator           |
-| Assignee           | Assignee          |
-| Labels             | Labels            |
-| Cycle Name         | Cycle Name        |
-| Cycle Start Date   | Cycle Start       |
-| Cycle End Date     | Cycle End         |
-| Module Name        |                   |
-| Module Start Date  |                   |
-| Module Target Date |                   |
-| Created At         | Created           |
-| Updated At         | Updated           |
-| Completed At       | Completed         |
-| Archived At        | Archived          |
+| Plane field        | Linear field |
+| ------------------ | ------------ |
+| Name               | Title        |
+| Description        | Description  |
+| State              | Status       |
+| Start Date         | Started      |
+| Target Date        | Due Date     |
+| Priority           | Priority     |
+| Created By         | Creator      |
+| Assignee           | Assignee     |
+| Labels             | Labels       |
+| Cycle Name         | Cycle Name   |
+| Cycle Start Date   | Cycle Start  |
+| Cycle End Date     | Cycle End    |
+| Module Name        |              |
+| Module Start Date  |              |
+| Module Target Date |              |
+| Created At         | Created      |
+| Updated At         | Updated      |
+| Completed At       | Completed    |
+| Archived At        | Archived     |
 
 There doesn't seem to be a direct mapping for modules. Linear has Milestones, but neither these, nor Roadmaps, nor issues with sub-issues are direct equivalents. Linear Projects offer the closest conceptual match, but are unsuitable here as Plane Projects already map to Linear Projects.
 
@@ -53,8 +53,6 @@ You can leave the config file empty if you don't want to map those, but if you d
 }
 ```
 
-
-
 ## Usage
 
 ```bash
@@ -67,4 +65,3 @@ npm i
 # Run the migrator
 node index.js --input plane.csv --output linear.csv --config config.json
 ```
-

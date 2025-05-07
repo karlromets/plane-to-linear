@@ -53,7 +53,7 @@ if (fs.existsSync(configPath)) {
 
 const headerMap = {
   Name: "Title",
-  Description: "Issue description",
+  Description: "Description",
   State: "Status",
   "Start Date": "Started",
   "Target Date": "Due Date",
