@@ -1,0 +1,26 @@
+{
+  "name": "plane-to-linear",
+  "version": "1.0.0",
+  "description": "Migrate Plane CSV to Linear CSV",
+  "homepage": "https://github.com/karlromets/plane-to-linear#readme",
+  "bugs": {
+    "url": "https://github.com/karlromets/plane-to-linear/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlromets/plane-to-linear.git"
+  },
+  "license": "ISC",
+  "author": "Karl Romet Somelar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.18"
+  }
+}
